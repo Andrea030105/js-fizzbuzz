@@ -11,25 +11,22 @@ const rowGrid = document.querySelector(".rowGrid");
 
 for (let i = 1; i <= 100; i++) {
 
-    let element;
-
     if (i % 3 == 0 && i % 5 == 0) {
 
-        element = `<div class="box box-red">${"FizzBuzz"}</div>`
+        rowGrid.innerHTML += `<div class="box box-red">${"FizzBuzz"}</div>`
 
     } else if (i % 3 == 0) {
 
-        element = `<div class="box box-green">${"Fizz"}</div>`
+        rowGrid.innerHTML += `<div class="box box-green">${"Fizz"}</div>`
 
     } else if (i % 5 == 0) {
 
-        element = `<div class="box box-yellow">${"Buzz"}</div>`
+        rowGrid.innerHTML += `<div class="box box-yellow">${"Buzz"}</div>`
 
     } else {
 
-        element = `<div class="box box-blu">${i}</div>`
+        rowGrid.innerHTML += `<div class="box box-blu">${i}</div>`
 
     }
 
-    rowGrid.innerHTML += element
 }
