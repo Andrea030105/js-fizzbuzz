@@ -5,25 +5,31 @@
 3 - condizione per multipli di 5 (i%5 == 0) stmapa "Buzz";
 4 - condizione per multipli di 3 e di 5 (i%3 == 0 && i%5 == 0) stmapa "FizzBuzz"; */
 
+
+const rowGrid = document.querySelector(".rowGrid");
+
+
 for (let i = 1; i <= 100; i++) {
+
+    let element;
 
     if (i % 3 == 0 && i % 5 == 0) {
 
-        console.log("FizzBuzz")
+        element = `<div class="box box-red">${"FizzBuzz"}</div>`
 
     } else if (i % 3 == 0) {
 
-        console.log("Fizz")
+        element = `<div class="box box-green">${"Fizz"}</div>`
 
     } else if (i % 5 == 0) {
 
-        console.log("Buzz")
+        element = `<div class="box box-yellow">${"Buzz"}</div>`
 
     } else {
 
-        console.log(i)
+        element = `<div class="box box-blu">${i}</div>`
 
     }
 
-
+    rowGrid.innerHTML += element
 }

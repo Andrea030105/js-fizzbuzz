@@ -11,3 +11,29 @@ body {
 h1 {
     font-size: 5rem;
 }
+
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    font-weight: bold;
+}
+
+.box-red {
+    background-color: #f94470;
+}
+
+.box-green {
+    background-color: #00d7a3;
+}
+
+.box-yellow {
+    background-color: #ffd372;
+}
+
+.box-blu {
+    background-color: #0088af;
+}
